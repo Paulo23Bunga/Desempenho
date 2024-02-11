@@ -1,0 +1,76 @@
+[
+{"type":"header","version":"5.1.1","comment":"Export to JSON plugin for PHPMyAdmin"},
+{"type":"database","name":"controle"},
+{"type":"table","name":"tb_adm","database":"controle","data":
+[
+
+]
+}
+,{"type":"table","name":"tb_aluno","database":"controle","data":
+[
+{"id_aluno":"4","nome_aluno":"joana miguel","curso":"ola","num_Bi":"3453457645476","morada_aluno":"UDDS","email_aluno":"gdd@mail","telefone_aluno":"9786766","id_turma":null,"classe":"10","foto_perfil":"IMG_20220505_111640.jpg","sexo":"Feminino","ponto":null,"presenca":null},
+{"id_aluno":"5","nome_aluno":"Live Style","curso":"Node","num_Bi":"12346","morada_aluno":"Samba","email_aluno":"live@mail","telefone_aluno":"55555","id_turma":null,"classe":"10","foto_perfil":"FB_IMG_16570956810864836.jpg","sexo":"Feminino","ponto":null,"presenca":null}
+]
+}
+,{"type":"table","name":"tb_aula","database":"controle","data":
+[
+
+]
+}
+,{"type":"table","name":"tb_classe","database":"controle","data":
+[
+{"id_classe":"1","id_curso":"1","id_displina":"3","classe":"11"},
+{"id_classe":"2","id_curso":"1","id_displina":"10","classe":"12"},
+{"id_classe":"3","id_curso":"1","id_displina":"12","classe":"10"},
+{"id_classe":"4","id_curso":"2","id_displina":"10","classe":"10"},
+{"id_classe":"5","id_curso":"4","id_displina":"12","classe":"11"}
+]
+}
+,{"type":"table","name":"tb_curso","database":"controle","data":
+[
+{"id_curso":"1","nome_curso":"Fisicas e Biologica","Classe_Curso":"10","id_cursodiscipina":"0"},
+{"id_curso":"2","nome_curso":"Econocas e Juridicas","Classe_Curso":"11","id_cursodiscipina":"0"},
+{"id_curso":"3","nome_curso":"Clinica Geral","Classe_Curso":"10","id_cursodiscipina":"0"},
+{"id_curso":"4","nome_curso":"Eletronica","Classe_Curso":"11","id_cursodiscipina":"0"}
+]
+}
+,{"type":"table","name":"tb_cursodisciplina","database":"controle","data":
+[
+{"id_cusodisciplina":"1","id_curso":"1","id_disciplina":"3","id_classe":"1","id_professor":"7","id_turma":"14"},
+{"id_cusodisciplina":"2","id_curso":"1","id_disciplina":"4","id_classe":"1","id_professor":"5","id_turma":"14"}
+]
+}
+,{"type":"table","name":"tb_disciplina","database":"controle","data":
+[
+{"id_disciplina":"3","nome_disciplina":"matematicA","classe_disciplina":"12","carga_horaria":"45","trimestre":"3","id_cursodisciplina":"0"},
+{"id_disciplina":"4","nome_disciplina":"Fisíca","classe_disciplina":null,"carga_horaria":"45","trimestre":"3","id_cursodisciplina":"0"}
+]
+}
+,{"type":"table","name":"tb_professor","database":"controle","data":
+[
+{"id_professor":"2","nome_prof":"miguel suares","email":"qscvhgk@xn--jbkjskllj-w3ac","telefone":"9213456778","senha":"12345","foto_prof":"","num_BI":"","nivel_academico":"","id_cursodiscipina":"0","id_turma":"0","morada":"viana","sexo":"","pendente":null},
+{"id_professor":"3","nome_prof":"orlando roqueiro","email":"scvhgk@xn--jbkjskllj-w3ac3","telefone":"92134567786","senha":"54321","foto_prof":"","num_BI":"","nivel_academico":"","id_cursodiscipina":"0","id_turma":"0","morada":"maianga","sexo":"","pendente":null},
+{"id_professor":"4","nome_prof":"Laura lourennço","email":"scvhgk@xn--jbkjskllj-w3ac9a","telefone":"92134567788","senha":"123478","foto_prof":"","num_BI":"","nivel_academico":"","id_cursodiscipina":"0","id_turma":"0","morada":"viana","sexo":"Feminino","pendente":null},
+{"id_professor":"5","nome_prof":"Ada Lovelace","email":"adalovelace@gmail.com","telefone":"92134567780","senha":"0000","foto_prof":"IMG_20220505_111640.jpg","num_BI":"127496340908dsh766555","nivel_academico":"","id_cursodiscipina":"0","id_turma":"0","morada":"maianga","sexo":"Feminino","pendente":null},
+{"id_professor":"6","nome_prof":"ultimo","email":"scvhgk@xn--jbkjskllj-w3ac","telefone":"834747","senha":"0000","foto_prof":"IMG_20220721_080600.jpg","num_BI":"yuw8474","nivel_academico":"","id_cursodiscipina":"0","id_turma":"0","morada":"5353Lua","sexo":"Outros","pendente":null},
+{"id_professor":"7","nome_prof":"eduardo mercedes","email":"eduardo@gmail.com","telefone":"+244958194878","senha":"0000","foto_prof":"","num_BI":"yuw8474","nivel_academico":"","id_cursodiscipina":"0","id_turma":"0","morada":"mainga","sexo":"Masculino","pendente":null},
+{"id_professor":"8","nome_prof":"armando david","email":"armandodavid@gmail.com","telefone":"+244959495278","senha":"123478","foto_prof":"","num_BI":"127496340908dsh766555","nivel_academico":"mestrado","id_cursodiscipina":"0","id_turma":"0","morada":"kilamba kiaxi","sexo":"Masculino","pendente":null},
+{"id_professor":"9","nome_prof":"Rafael Soares rodrigues ","email":"Rafaelrodrigues@gmail.com","telefone":"+244951987878","senha":"54321","foto_prof":"","num_BI":"yuw8474","nivel_academico":"lincenciado","id_cursodiscipina":"0","id_turma":"0","morada":"kilamba kiaxi","sexo":"Masculino","pendente":null},
+{"id_professor":"10","nome_prof":"lumengo Catarina","email":"lumengocatarina@gmail.com","telefone":"+244951132878","senha":"0000","foto_prof":"","num_BI":"yuw8474","nivel_academico":"mestrado","id_cursodiscipina":"0","id_turma":"0","morada":"viana\/grafanil","sexo":"Feminino","pendente":null},
+{"id_professor":"11","nome_prof":" António makimuena","email":"antoniomakimuena@gmail.com","telefone":"+2449511328781","senha":"12345","foto_prof":"20210202_142534.jpg","num_BI":"","nivel_academico":"","id_cursodiscipina":"0","id_turma":"0","morada":"kilamba kiaxi","sexo":"Masculino","pendente":null},
+{"id_professor":"12","nome_prof":"Paulo Py","email":"paulo@mail.com","telefone":"9752827332","senha":"p1234","foto_prof":"Imagem1.png","num_BI":"yuw8474","nivel_academico":"lincenciado","id_cursodiscipina":"0","id_turma":"0","morada":"kilamba kiaxi","sexo":"Masculino","pendente":null},
+{"id_professor":"13","nome_prof":"Sony Son","email":"sony@mail.com","telefone":"76392111","senha":"sony123","foto_prof":"Imagem1.png","num_BI":"03899202hd23","nivel_academico":"lincenciado","id_cursodiscipina":"0","id_turma":"0","morada":"angola","sexo":"Masculino","pendente":null},
+{"id_professor":"14","nome_prof":"Oliveira Rodrigues","email":"oliveirarodrigues@gmail.com","telefone":"+244921139478","senha":"sony123","foto_prof":"IMG-20220325-WA0128.jpg","num_BI":"12749634090766555","nivel_academico":"Doutorado","id_cursodiscipina":"0","id_turma":"0","morada":"kilamba kiaxi","sexo":"Masculino","pendente":"0"},
+{"id_professor":"15","nome_prof":"Silva","email":"silva@mail.com","telefone":"0890083","senha":"s1234","foto_prof":"","num_BI":"bdi7771","nivel_academico":"Doutorado","id_cursodiscipina":"0","id_turma":"0","morada":"luada","sexo":"Masculino","pendente":"1"},
+{"id_professor":"16","nome_prof":"Deco","email":"de@mail.com","telefone":"02449511328789","senha":"d123","foto_prof":"","num_BI":"4255deco22","nivel_academico":"lincenciado","id_cursodiscipina":"0","id_turma":"0","morada":"kilamba kiaxi","sexo":"Masculino","pendente":"1"},
+{"id_professor":"17","nome_prof":"Isaura Orlando","email":"isauraorlando@gmail.com","telefone":"+244967132878","senha":"isaura0000","foto_prof":"123.png","num_BI":"","nivel_academico":"lincenciada","id_cursodiscipina":"0","id_turma":"0","morada":"zango","sexo":"Feminino","pendente":"1"}
+]
+}
+,{"type":"table","name":"tb_turma","database":"controle","data":
+[
+{"id_turma":"14","titulo":"Turma A","sala":"3","id_classe":null,"ano_letivo":"2022\/2023","id_curso":null,"turno":"tarde","id_professor":null},
+{"id_turma":"15","titulo":"QMB","sala":"16","id_classe":null,"ano_letivo":"2022\/2023","id_curso":null,"turno":"noite","id_professor":null},
+{"id_turma":"16","titulo":"QMC","sala":"15","id_classe":null,"ano_letivo":"2022\/2023","id_curso":null,"turno":"noite","id_professor":null}
+]
+}
+]
