@@ -117,20 +117,21 @@
           <li class="nav-item">
             <a class="nav-link" href="#plano">
               <i class="bi bi-book-fill"></i>
-                Plano de Aula 
+                Informação
             </a>
           </li>
           <li class="nav-item">
             <a class="nav-link" href="#guard">
               <i class="bi bi-book"></i>
                Aulas Guardadas
-            </a>
+           </a>
           </li>
-          <li class="nav-item">
+          <!-- End small tables -->
+          <!--<li class="nav-item">
             <a class="nav-link" href="#ponto">
               <i class="bi bi-person"></i>
                 presença e ponto
-            </a>
+            </a>-->
           </li>
 
           <li class="nav-item">
