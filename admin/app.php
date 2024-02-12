@@ -25,7 +25,7 @@
 
 
 
-    <!-- Custom styles for this template -->
+    <!-- ´NICIO DO Painel do administrador -->
     <link href="dashboard.css" rel="stylesheet">
   </head>
   <body>

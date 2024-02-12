@@ -72,7 +72,7 @@
     </style>
 
 
-    <!-- Custom styles for this template -->
+    <!-- ALTERANDO O PERFIL (PROFESSOR) -->
     <link href="css/dashboard.css" rel="stylesheet">
   </head>
   <body>
@@ -107,31 +107,33 @@
     <nav id="sidebarMenu" class="col-md-3 col-lg-2 d-md-block bg-light sidebar collapse">
       <div class="position-sticky pt-3">
         <ul class="nav flex-column">
-          <li class="nav-item">
+              <!-- BOTONS DO PAINEL DO PROFESSOR -->
+        <li class="nav-item">
             <a class="nav-link active" aria-current="page" href="#inicio">
               <i class="bi bi-house"></i>
-
               InÍcio
             </a>
           </li>
+
           <li class="nav-item">
+            <a class="nav-link" href="#Informa">
+              <span data-feather="users"></span>
+              <i class="bi bi-book-fill"></i>
+              Informação
+              </a>
+              </li>
+
+          <!--li class="nav-item">
             <a class="nav-link" href="#plano">
               <i class="bi bi-book-fill"></i>
                 Informação
-            </a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#guard">
+            </a-->
+            <li class="nav-item">
+            <a class="nav-link" href="#Pesquisar_aula">
+              <span data-feather="users"></span>
               <i class="bi bi-book"></i>
-               Aulas Guardadas
-           </a>
-          </li>
-          <!-- End small tables -->
-          <!--<li class="nav-item">
-            <a class="nav-link" href="#ponto">
-              <i class="bi bi-person"></i>
-                presença e ponto
-            </a>-->
+              Controlar aulas
+              </a>
           </li>
 
           <li class="nav-item">
@@ -402,8 +404,17 @@
                 </div>
                 <div class="tab-pane fade" id="bordered-justified-profile" role="tabpanel" aria-labelledby="profile-tab">
                   <div class="card-body table-responsive">
-                    <h5 class="card-title">Mini Paula Aluno</h5>
+                    <h5 class="card-title">Mini Pauta Aluno</h5>
                     <div class="row py-3">
+
+                     <!--<div class="card-footer text-muted text-center" id="detroturma">
+                    <a href="#detroturma" class="btn btn-azul" 
+                          style="position: fixed;bottom: 50px; right: 50px;">Guardar</a>
+                    </div>-->
+
+                     <div class="card-footer text-muted text-center">
+                <a href="#detroturma" class="btn btn-azul">Guardar a Mini pauta</a>
+              </div>
                       <div class="col-6">
                         <label for="firstName" class="form-label">Disciplina</label>
                         <select class="form-select" aria-label="Default select example">
@@ -653,7 +664,7 @@
     </main>
     <!-- FIM ENTRAR NA  TURMA -->
 
-    <!--PAINEL INICIAL-->
+    <!-- ENTRAR NAS TURMAS -->
     <main id="perPonto" class="col-md-9 ms-sm-auto col-lg-10 px-md-4 d-none">
 
       <div class="container py-4 rolar">
@@ -832,7 +843,7 @@
         </table>
       </div>
     </main>
-    <!--FIM PAINEL INICIAL-->
+    <!--FIM ENTRAR NAS TURMAS-->
 
     <!--PLANO DE AULA-->
   <main id="guard" class="main col-md-9 ms-sm-auto col-lg-10 px-md-4 d-none">
@@ -1465,6 +1476,25 @@
 
   </main><!-- End #main -->
 
+<!-- PESQUISAR AULAS   -->
+  <main class="col-md-9 ms-sm-auto col-lg-10 px-md-4" id="Pesquisar_aula">
+      <div class="d-flex justify-content-between flex-wrap flex-md-nowrap align-items-center pt-3 pb-2 mb-3 border-bottom">
+        <h1 class="h2">Painel de pesquisa de Aulas </h1>
+        <div class="btn-toolbar mb-2 mb-md-0">
+          <div class="input-group mb-3">
+            <input type="text" class="form-control" placeholder="pesquisar por professor..." aria-label="Recipient's username" aria-describedby="basic-addon2" style="min-width: 250px;">
+            <span class="input-group-text" id="basic-addon2"><i class="bi bi-search"></i></span>
+          </div>
+        </div>
+      </div>
+      <div class="container py-4 corpo" >
+
+      </div>
+    </main>
+  </div>
+</div>
+<!-- FIM PESQUISAR AULAS   -->
+
 
   </div>
 </div>
@@ -1827,6 +1857,17 @@
     </div>
   </div>
 
+  <!--informação-->
+  <main class="col-md-9 ms-sm-auto col-lg-10 px-md-4 " id="Informa">
+      <div class="container py-4">
+        <div class="table-responsive">
+        <h5 class="modal-title" id="exampleModalCenteredScrollableTitle">informação</h5>
+        </div>
+      </div>
+    </main>
+    
+    <!--fim informação-->
+
   <script type="text/javascript" src="js/jquery-3.5.1.min.js"></script>
   <!-- Vendor JS Files -->
   <script src="assets/vendor/apexcharts/apexcharts.min.js"></script>
@@ -1851,12 +1892,36 @@
       $("#detroturma").removeClass('d-none');
 
     })
-
+ //BOTÃO DE INICIO PROFESSOR
     $("a[href='#inicio']").click(()=>{
   $("main").addClass('d-none');
   $("#inicio").removeClass('d-none');
 })
+  //BOTÃO DE PESQUISA DE AULA
+$("a[href='#Pesquisar_aula']").click(()=>{
+    $("main").addClass('d-none');
+    $("#Pesquisar_aula").removeClass('d-none');
+    $(".nav-link").removeClass('active');
+    $("a[href='#Pesquisar_aula']").addClass('active');
 
+    if(window.innerWidth <= 767){
+     // alert("Ola")
+     $("#sidebarMenu").toggleClass('show');
+    }
+})
+
+  //BOTÃO DE INFORMAÇÃO
+  $("a[href='#Informa']").click(()=>{
+    $("main").addClass('d-none');
+    $("#Informa").removeClass('d-none');
+    $(".nav-link").removeClass('active');
+    $("a[href='#Informa']").addClass('active');
+
+    if(window.innerWidth <= 767){
+     // alert("Ola")
+     $("#sidebarMenu").toggleClass('show');
+    }
+})
 
   </script>
 
